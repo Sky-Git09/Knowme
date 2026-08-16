@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- Boxicons CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <!-- Ionicons CDN Link -->
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+   <nav class="navbar" id="navbar">  
+        <div class="navbar-container">
+            <H1 class="logo">Lens_jibon</H1>
+            <ul class="navbar-menu">
+                <li><a href="#Home" class="active">Home</a></li>
+                <li><a href="#About" class="About">About</a></li>
+                <li><a href="#Gallery" class="">Gallery</a></li>
+                <li><a href="#Services" class="">Services</a></li>
+                <li><a href="#Contact" class="">Contact</a></li>
+            </ul>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+   </nav>
+   <section id="Home" class="Home">
+        <div class="blob-small" style="right: 0;"></div>
+        <div class="blob-small" style="left: 0;"></div>
+
+        <div class="home-container container grid">
+            <div class="home-data">
+              <h3 class="home-subtitle"> It's lens_jibon - Based on Kolkata</h3> 
+              <h1 class="home-title">
+                Hello, I'm <br>
+                <span id="home-typed"></span><br>
+              </h1> 
+              <p class="home-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, labore repellat.</p>
+              <div class="social">
+                <p>Photography, stories, and moments. Connect on social media or visit my profile and work!</p>
+                <div class="social-showcase">
+                    <a href="https://wa.me/yourphonenumber" target="_blank" class="social-links">
+                        <div class="icon"><ion-icon name="logo-whatsapp" class="i"></ion-icon></div>
+                        <span class="social-text">WhatsApp</span>
+                    </a>
+                    <a href="https://www.facebook.com/yourprofile" target="_blank" class="social-links">
+                        <div class="icon"><ion-icon name="logo-Facebook" class="i"></ion-icon></div>
+                        <span class="social-text">Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank" class="social-links">
+                        <div class="icon"><ion-icon name="logo-Instagram" class="i"></ion-icon></div>
+                        <span class="social-text">Instagram</span>
+                    </a>
+                </div>
+            </div>
+            </div>
+            <div class="home-img">
+                <div class="home-box-1"></div>
+                <div class="home-box-2"></div>
+                <div class="home-box-3"></div>
+                <img src="images/ai-generated-cute-photographer-boy-free-png.webp" alt=" Digital professional portrait" class="home-image"> 
+                <div class="home-circle">
+                    <span class="home-text" id="home-text">- EXPLORE -- MORE -- LETS -</span>
+                    <a href="#About" id="home-arrow">
+                        <ion-icon name="arrow-down-outline" class="arrow" style="position: relative; height: 2.5rem; width: 2.5rem; color: white; display: grid; background-color: #680000; font-size: 1.6rem; border-radius: 50%; z-index: 100;"></ion-icon>
+                    </a>
+                </div> 
+                <div class="blob-big"></div>
+                <div class="blob-big2"></div>
+            </div>
+        </div>
+   </section>
+   <section id="About" class="About">
+       <div class="ribbon">
+            <h1 class="heading">About <span>Me</span></h1>
+       </div>
+       <div class="row">
+            <div class="img-container">
+                <img src="images/ChatGPT Image May 31, 2026, 11_11_51 PM.png" alt=" Digital professional portrait" class="about-image" style="border-radius: 66% 34% 54% 46% / 55% 64% 36% 45%;"> 
+                <h3>lens_Jibon</h3>
+            </div>
+            <div class="content">
+                <h3>I'm a Photographer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Dicta doloremque, qui cupiditate, fugit laudantium voluptates corrupti neque, facere aliquam at adipisci omnis explicabo! Dignissimos, aliquam tenetur saepe laborum voluptatum id! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem enim sunt corrupti laboriosam distinctio voluptate voluptatibus, accusamus dolor, ab repellendus assumenda! Veniam temporibus amet ut, accusamus enim suscipit quibusdam at nulla beatae. 
+               Mollitia iusto, aut aliquid ipsum nihil eveniet molestiae?</p>
+                <button class="btn" onclick="toggle()">Learn More
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </but>
+            </div>
+        </div>
+   </section>
+   <div class="popup-container" id="popup-container">
+        <div class="card-container">
+            <article class="card-article">
+                <img src="images/Popup image 2.png" alt="pop-image" class="card-image">
+                <div class="card-data">
+                    <span class="card-description">Capturing every moment</span>
+                    <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat sapiente odio aspernatur culpa incidunt consequatur.</h2>
+                </div>
+            </article>
+            <article class="card-article">
+                <img src="images/Popup image 2.png" alt="pop-image" class="card-image">
+                <div class="card-data">
+                    <span class="card-description">Capturing City Lights</span>
+                    <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus sunt aut!</h2>
+                </div>
+            </article>
+            <article class="card-article">
+                <img src="images/Popup image 1.png" alt="pop-image" class="card-image">
+                <div class="card-data">
+                    <span class="card-description">Capturing Portraits</span>
+                    <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero omnis sunt nesciunt fuga voluptatem esse. Voluptate consequuntur doloremque eaque. Minus soluta nisi error repudiandae facere quod animi quae tenetur veritatis.</h2>
+                </div>
+            </article>
+        </div>
+        <div class="close" id="close" onclick="toggle()">
+            <ion-icon name="close-outline" class="close-icon"></ion-icon>
+        </div>
+   </div>
+   <section id="Gallery">
+        <div class="intro">
+            <h1>Fragmentation of a <em>familiar</em> world.</h1>
+            <p>An ongoing intention to capture moments, places and the quite space between the world.</p>
+        </div>
+        <nav class="filters" aria-label="Filter photographs">
+            <button class="filter active" data-filter="all">All WORK</button>
+            <button class="filter" data-filter="portrait">PORTRAITS</button>
+            <button class="filter" data-filter="landscape">LANDSCAPES</button>
+        </nav>
+        <div class="gallery-wrapper" aria-label="Photography gallery">
+            <article class="photo" data-category="portrait" data-title="Something" data-meta="SOME . 2025">
+                <img src="Images/Gallary picture 1.jpeg" alt="" class="src">
+                <div class="photo-info">
+                    <div>
+                        <h2 class="photo-title">Something</h2>
+                        <p class="photo-meta">SOME . 2025</p>
+                    </div>
+                    <Span class="open">↗</Span>
+                </div>
+            </article>
+            <article class="photo" data-category="landscape" data-title="Something" data-meta="SOME . 2025">
+                <img src="Images/Gallary picture 3.jpeg" alt="" class="src">
+                <div class="photo-info">
+                    <div>
+                        <h2 class="photo-title">Something</h2>
+                        <p class="photo-meta">SOME . 2025</p>
+                    </div>
+                    <Span class="open">↗</Span>
+                </div>
+            </article>
+            <article class="photo" data-category="all" data-title="Something" data-meta="SOME . 2025">
+                <img src="Images/Gallary picture 5.jpeg" alt="" class="src">
+                <div class="photo-info">
+                    <div>
+                        <h2 class="photo-title">Something</h2>
+                        <p class="photo-meta">SOME . 2025</p>
+                    </div>
+                    <Span class="open">↗</Span>
+                </div>
+            </article>
+            <article class="photo" data-category="all" data-title="Something" data-meta="SOME . 2025">
+                <img src="Images/Gallary picture 5.jpeg" alt="" class="src">
+                <div class="photo-info">
+                    <div>
+                        <h2 class="photo-title">Something</h2>
+                        <p class="photo-meta">SOME . 2025</p>
+                    </div>
+                    <Span class="open">↗</Span>
+                </div>
+            </article>
+            <article class="photo" data-category="all" data-title="Something" data-meta="SOME . 2025">
+                <img src="Images/Gallary picture 4.jpeg" alt="" class="src">
+                <div class="photo-info">
+                    <div>
+                        <h2 class="photo-title">Something</h2>
+                        <p class="photo-meta">SOME . 2025</p>
+                    </div>
+                    <Span class="open">↗</Span>
+                </div>
+            </article>
+            <article class="photo" data-category="all" data-title="Something" data-meta="SOME . 2025">
+                <img src="Images/Gallary picture 3.jpeg" alt="" class="src">
+                <div class="photo-info">
+                    <div>
+                        <h2 class="photo-title">Something</h2>
+                        <p class="photo-meta">SOME . 2025</p>
+                    </div>
+                    <Span class="open">↗</Span>
+                </div>
+            </article>
+            <article class="photo" data-category="all" data-title="Something" data-meta="SOME . 2025">
+                <img src="Images/Gallary picture 2.jpeg" alt="" class="src">
+                <div class="photo-info">
+                    <div>
+                        <h2 class="photo-title">Something</h2>
+                        <p class="photo-meta">SOME . 2025</p>
+                    </div>
+                    <Span class="open">↗</Span>
+                </div>
+            </article>
+            <article class="photo" data-category="all" data-title="Something" data-meta="SOME . 2025">
+                <img src="Images/Gallary picture 5.jpeg" alt="" class="src">
+                <div class="photo-info">
+                    <div>
+                        <h2 class="photo-title">Something</h2>
+                        <p class="photo-meta">SOME . 2025</p>
+                    </div>
+                    <Span class="open">↗</Span>
+                </div>                
+            </article>
+            <article class="photo" data-category="all" data-title="Something" data-meta="SOME . 2025">
+                <img src="Images/Gallary picture 4.jpeg" alt="" class="src">
+                <div class="photo-info">
+                    <div>
+                        <h2 class="photo-title">Something</h2>
+                        <p class="photo-meta">SOME . 2025</p>
+                    </div>
+                    <Span class="open">↗</Span>
+                </div>
+            </article>
+            <article class="photo" data-category="all" data-title="Something" data-meta="SOME . 2025">
+                <img src="Images/Gallary picture 3.jpeg" alt="" class="src">
+                <div class="photo-info">
+                    <div>
+                        <h2 class="photo-title">Something</h2>
+                        <p class="photo-meta">SOME . 2025</p>
+                    </div>
+                    <Span class="open">↗</Span>
+                </div>
+            </article>
+            <article class="photo" data-category="all" data-title="Something" data-meta="SOME . 2025">
+                <img src="Images/Gallary picture 2.jpeg" alt="" class="src">
+                <div class="photo-info">
+                    <div>
+                        <h2 class="photo-title">Something</h2>
+                        <p class="photo-meta">SOME . 2025</p>
+                    </div>
+                    <Span class="open">↗</Span>
+                </div>
+            </article>
+            <article class="photo" data-category="all" data-title="Something" data-meta="SOME . 2025">
+                <img src="Images/Gallary picture 5.jpeg" alt="" class="src">
+                <div class="photo-info">
+                    <div>
+                        <h2 class="photo-title">Something</h2>
+                        <p class="photo-meta">SOME . 2025</p>
+                    </div>
+                    <Span class="open">↗</Span>
+                </div>
+            </article>
+            <article class="photo" data-category="all" data-title="Something" data-meta="SOME . 2025">
+                <img src="Images/Gallary picture 4.jpeg" alt="" class="src">
+                <div class="photo-info">
+                    <div>
+                        <h2 class="photo-title">Something</h2>
+                        <p class="photo-meta">SOME . 2025</p>
+                    </div>
+                    <Span class="open">↗</Span>
+                </div>
+            </article>
+            <article class="photo" data-category="all" data-title="Something" data-meta="SOME . 2025">
+                <img src="Images/Gallary picture 3.jpeg" alt="" class="src">
+                <div class="photo-info">
+                    <div>
+                        <h2 class="photo-title">Something</h2>
+                        <p class="photo-meta">SOME . 2025</p>
+                    </div>
+                    <Span class="open">↗</Span>
+                </div>
+            </article>
+            <article class="photo" data-category="all" data-title="Something" data-meta="SOME . 2025">
+                <img src="Images/Gallary picture 3.jpeg" alt="" class="src">
+                <div class="photo-info">
+                    <div>
+                        <h2 class="photo-title">Something</h2>
+                        <p class="photo-meta">SOME . 2025</p>
+                    </div>
+                    <Span class="open">↗</Span>
+                </div>
+            </article>
+        </div>
+   </section>
+   <dialog id="lightbox">
+        <button class="Close" aria-label="Close image">×</button>
+        <img class="lightbox-img" src="" alt="" class="src">
+        <div class="lightbox-caption">
+            <strong></strong>
+            <span></span>
+        </div>
+   </dialog>
+   <section id="Services" class="Services">
+        <div class="ribbon">
+            <h1 class="heading">My<span> Services</span></h1>
+        </div>
+        <div class="hero">
+            <img src="Images/Screenshot 2026-08-13 184056.png" alt="" class="src">
+        </div>
+        <div class="service-container">
+            <div class="icon">
+                <div class="service-box" data-service="photo" style="--i:1;">
+                    <ion-icon name="camera-outline" class="service-icon"></ion-icon>
+                </div>
+                <div class="service-box" data-service="video" style="--i:2;">
+                    <ion-icon name="videocam-outline" class="service-icon"></ion-icon>
+                </div>
+                <div class="service-box" data-service="Commercial" style="--i:3;">
+                    <ion-icon name="pricetags" class="service-icon"></ion-icon>
+                </div>
+                <div class="service-box" data-service="landscape" style="--i:4;">
+                    <ion-icon name="leaf" class="service-icon"></ion-icon>
+                </div>
+                <div class="service-box" data-service="marketing" style="--i:5;">
+                    <ion-icon name="balloon" class="service-icon"></ion-icon>   
+                </div>
+                <div class="service-box" data-service="editing" style="--i:6;">
+                    <ion-icon name="pencil" class="service-icon"></ion-icon>
+                </div>
+            </div>
+            <div class="line">
+                <div class="service-discussion " id="service-discussion">
+                    <h3 id="popupTitle"></h3>
+                    <p id="popupText"></p>
+                </div>  
+            </div>
+        </div> 
+   </section>
+   <section id="Contact">
+        <div class="aspect">
+            <h1>Let me help you to execute your ideas</h1>
+        </div>
+        <div class="contact-card" aria-labelledby="contact-title">
+            <div class="introduction">
+                <p class="eyebrow">
+                    <span> Available for new projects</span>
+                </p>
+                <h1 class="contact-title">
+                    Let's make something 
+                    <em>remarkable.</em>
+                </h1>
+                <p class="lede">
+                    Have a project, idea or opportunity in mind, Send a note and I will get back to you soon. Eagerly waiting to collaborate.
+                </p>
+                <div class="details">
+                    <div class="detail-item">
+                        <span class="detail-icon" aria-hidden="true">↗</span>
+                        <p>
+                            <strong>Throughtful collaboration</strong>
+                            <br>
+                            "From first idea to final detail."
+                        </p>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon" aria-hidden="true">↗</span>
+                        <p>
+                            <strong>Throughtful collaboration</strong>
+                            <br>
+                            "From first idea to final detail."
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <form id="contact-form" novalidate>
+                <div class="field-row">
+                    <label for="">
+                        <span>You Name</span>
+                        <input type="text" name="name" autocomplete="name" placeholder="Jane Doe" required>
+                    </label>
+                    <label for="">
+                        <span>Email address</span>
+                        <input type="email" name= "email" autocomplete="email" placeholder="jane@company.com" required>
+                    </label>
+                </div>
+                <label for="">
+                    <span>What's this about?</span>
+                    <input type="text" name="subject" placeholder="Project Collaboration" requires>
+                </label>
+                <label for="">
+                    <span>Your message</span>
+                    <textarea name="message" rows="5" placeholder="Tell me a little about what you have in mind..." required></textarea>
+                </label>
+                <div class="form-footer">
+                    <p class="privacy">Your details stay private and are only used to reply to you message.</p>
+                    <button class="ctn" type="submit">
+                        <span>Send message</span>
+                        <b aria-hidden="true">→</b>
+                    </button>
+                </div>
+                <p id="form-status" class="form-status" aria-live="polite">Form submitted successfully</p>
+            </form>
+        </div>
+    </section>
+<script src="script.js"></script>  
+</body>
+</html>
